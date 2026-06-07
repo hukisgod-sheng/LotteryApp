@@ -3,7 +3,7 @@
 
 $ErrorActionPreference = "Stop"
 $RepoOwner = "hukisgod-sheng"
-$RepoName = "ssq-lottery-sandbox"
+$RepoName = "LotteryApp"
 $Branch = "main"
 $MainFile = "app.py"
 
@@ -50,7 +50,7 @@ if (-not $repoExists) {
 Write-Host "[OK] 代码已在 GitHub" -ForegroundColor Green
 
 # 3. 打开 Streamlit 预填部署页（你已授权 Streamlit，点 Deploy 即可）
-$deployUrl = "https://share.streamlit.io/deploy?repository=$fullRepo&branch=$Branch&mainModule=$MainFile&subdomain=ssq-sandbox"
+$deployUrl = "https://share.streamlit.io/deploy?repository=$fullRepo&branch=$Branch&mainModule=$MainFile&subdomain=lottery-app"
 Write-Host "[3/3] 打开 Streamlit 部署页..." -ForegroundColor Yellow
 Write-Host "  $deployUrl" -ForegroundColor Gray
 Start-Process $deployUrl

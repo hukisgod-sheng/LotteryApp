@@ -11,7 +11,7 @@
 | 选项 | 建议 |
 |------|------|
 | 仓库访问范围 | 选 **「Only select repositories / 仅选定仓库」** |
-| 选定仓库 | 只勾选 **`ssq-lottery-sandbox`** |
+| 选定仓库 | 只勾选 **`LotteryApp`** |
 | 私有仓库 | **不要**勾选「All repositories」，避免飞控等私有源码被 Streamlit 访问 |
 | 公开仓库 | 本应用为娱乐学习用途，**Public 公开仓库即可**，无需开放私有库 |
 
@@ -40,7 +40,7 @@ gh auth login --scopes public_repo
 
 1. 双击项目根目录 **`一键部署到云端.bat`**
 2. 若提示 GitHub 登录：浏览器打开后输入终端里的一次性验证码，授权 **public_repo**
-3. 脚本会自动：新建独立仓库 `ssq-lottery-sandbox` → 推送代码 → 打开 Streamlit 部署页
+3. 脚本会自动：推送到仓库 `LotteryApp` → 打开 Streamlit 部署页
 4. 在 Streamlit 页面点击 **Deploy**，等待 2～5 分钟
 
 独立仓库地址将是：`https://github.com/hukisgod-sheng/ssq-lottery-sandbox`（与飞控仓库完全分开）
